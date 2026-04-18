@@ -1,9 +1,0 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Application
-metadata:
-  name: my-app
-spec:
-  project: default
-  source:
-    repoURL: https://github.com/AravindS301/eks-terraform-jenkins.git
-    path: :
