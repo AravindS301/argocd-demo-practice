@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: dev-app
+  namespace: argocd
+spec:
+  project: my-app-project
+  source:
+    repoURL: https://github.com/AravindS301/argocd-demo-practice/tree/main/practice-set-2.git
+    targetRevision: HEAD
+    path : practice-set-2
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: dev
+  syncPolicy:
+    automated: {}
