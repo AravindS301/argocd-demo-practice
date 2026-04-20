@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/AravindS301/argocd-demo-practice.git
     targetRevision: HEAD
-    path : practice-set-2
+    path : manifest
 
   destination:
     server: https://kubernetes.default.svc

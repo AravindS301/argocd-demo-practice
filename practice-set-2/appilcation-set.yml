@@ -1,0 +1,24 @@
+   apiVersion: argoproj.io/v1alpha1  
+   kind: ApplicationSet  
+   metadata:  
+     name: env-appset  
+   spec:  
+     generators:  
+       - list:  
+           elements:  
+             - cluster: staging  
+               repoURL: https://github.com/my-org/staging-app.git  
+             - cluster: production  
+               repoURL: https://github.com/my-org/production-app.git  
+     template:  
+       metadata:  
+         name: '{{cluster}}-app'  
+       spec:  
+         project: my-app-project 
+         source:  
+           repoURL: '{{repoURL}}'  
+           path: manifest  
+         destination:  
+           server: https://kubernetes.default.svc  
+           namespace: '{{cluster}}'
+
