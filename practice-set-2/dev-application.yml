@@ -6,7 +6,7 @@ metadata:
 spec:
   project: my-app-project
   source:
-    repoURL: https://github.com/AravindS301/argocd-demo-practice/tree/main/practice-set-2.git
+    repoURL: https://github.com/AravindS301/argocd-demo-practice.git
     targetRevision: HEAD
     path : practice-set-2
 
