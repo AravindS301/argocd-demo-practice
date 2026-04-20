@@ -10,7 +10,7 @@ spec:
     targetRevision: HEAD
     path: practice-set-2
   destination:
-    server: https://kubernetes.deafult.svc
+    server: https://kubernetes.default.svc
     namespace: prod
   syncPolicy:
     automated: {}
