@@ -8,9 +8,9 @@
        - list:  
            elements:  
              - cluster: staging  
-               repoURL: https://github.com/my-org/staging-app.git  
+               repoURL: https://github.com/AravindS301/argocd-demo-practice.git  
              - cluster: production  
-               repoURL: https://github.com/my-org/production-app.git  
+               repoURL: https://github.com/AravindS301/argocd-demo-practice.git  
      template:  
        metadata:  
          name: '{{cluster}}-app'  
